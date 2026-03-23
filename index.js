@@ -21,7 +21,9 @@ app.get('/submit-student-data', function(req,res)
     res.send ("Invalid acccess attempted");
 });
 
-var server = app.listen(process.env.PORT || 5000, function()
+var port = process.env.PORT || 5000;
+
+var server = app.listen(port, function()
 {
     console.log("Listening...");
 });
