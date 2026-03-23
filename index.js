@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req,res)
 {
-    res.sendFile(__dirname + '\\' + 'index.html');
+    res.sendFile(__dirname + '/' + 'index.html');
 });
 
 app.post('/submit-student-data', function(req,res)
