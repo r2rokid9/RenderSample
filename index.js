@@ -13,7 +13,7 @@ app.post('/submit-student-data', function(req,res)
 {
     var name = req.body.firstName + ' ' + req.body.lastName;
 
-    res.send(name + ' Submitted Successfully! Thank you!');
+    res.send(name + ' Submitted Successfully! Thank you! Have a nice day!');
 });
 
 app.get('/submit-student-data', function(req,res)
